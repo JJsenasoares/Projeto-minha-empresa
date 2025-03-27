@@ -1,0 +1,123 @@
+/* Resetando margens, padding e definindo o fundo e outras propriedades globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho moderno */
+.cabecalho {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho img {
+    height: 60px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav a:hover {
+    background: #e94560;
+    transform: scale(1.1);
+}
+
+/* Estilização do título principal */
+main {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+
+    font-size: 42px;
+    color: #16213e;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+/* Estilização responsiva */
+@media (max-width: 1024px) {
+    .cabecalho {
+        padding: 20px 30px;
+    }
+
+    .nav {
+        gap: 20px;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 15px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 15px 10px;
+    }
+
+    .nav a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
